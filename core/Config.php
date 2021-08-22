@@ -4,7 +4,7 @@ namespace Core;
 class Config{
     private static $config = [
         'version'              => '0.0.1', //app version
-         'root_dir'            => '/oopmvc', //app dir root
+         'root_dir'            => '/oopmvc/', //app dir root
          'default_controller'  => 'Ethuto', //controller
          'default_layout'      => 'default', //degfault layout
          'default_site_title'  => 'Ethutoapp', //site title
