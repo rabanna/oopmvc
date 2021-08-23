@@ -1,0 +1,231 @@
+/*
+------------------------------------
+E-thute css
+------------------------------------
+Created by: Rabanna Shuffle
+Date:18-09-2017
+
+
+ */
+
+body {
+    line-height: 1.8;
+    color: #818181;
+	background-color:#CCC;
+}
+th{
+	
+	background-color: #09C !important;
+	color:#FFF !important;
+}	
+
+  .navbar {
+    margin-bottom: 0;
+    background-color: #333;
+    z-index: 9999;
+    border: 0;
+    font-size: 16px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+	border-bottom: 3px solid #09F;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #CCC !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #FFF !important;
+    background-color: #09F !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+  
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #09F;
+}
+
+.carousel-indicators li {
+    border-color: #09F;
+}
+
+.carousel-indicators li.active {
+    background-color: #09F;
+}
+.carousel.slide{
+	  margin-top:0;
+  }
+.item h1 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+	color: #F39;
+}
+
+.item span {
+    font-style: normal;
+}
+ 
+.thumbnail {
+	margin-top:10px;
+    border: 1px solid #09F; 
+    border-radius:0;
+    transition: box-shadow 0.5s;
+}
+
+.thumbnail:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+footer{
+    margin-bottom: 0;
+    background-color: #2f2f2f;
+    color: #ffffff;
+   
+}
+.panel-footer{
+	background-color:#CCC !important;
+	}
+
+#logo{
+	width:48%;
+	height:48%;
+	margin-top:0;
+	position:relative;
+}
+.header{
+	margin-top:0px;
+	width:100%;
+	margin-bottom:3px;
+	padding-top:5px;
+	height:200px;
+}
+.panel {
+    border: 1px solid #09F; 
+    border-radius:0;
+    transition: box-shadow 0.5s;
+}
+.page-header{
+	margin-top:10px !important;
+	border-bottom-color:#06F !important;
+	color:#09C !important;
+	
+	}
+
+.page-header{
+	margin-top:1px;
+	color:#09C !important;
+}
+.panel-heading{
+	height:55px;
+}
+.panel-heading h3{
+	margin-top:1px;
+	padding:1px;
+	text-align:center;
+}
+
+.w3-panel{
+    border: 1px solid #0CF; 
+	} 
+	
+.list-group a:hover{
+	color: #fff !important;
+    background-color: #09F !important;
+}
+#addshadow{
+ text-shadow:5px 5px 10px #0099FF;
+
+}
+#searchform{
+  width: 100px !important;
+  -webkit-transition: width .35s ease-in-out !important;
+  transition: width .35s ease-in-out !important;
+}
+#searchform:focus {
+  width: 250px !important;
+}
+.developers{
+  height: 400px;
+  overflow: auto;
+}
+
+
+.admin-mail-panel{
+	margin-top:50px;
+}
+.w3-panel{
+	background-color:#FFF !important;
+}
+.admin-side-bar{
+	height:100%;
+}
+.admin-dash-bord{
+	background-color: #CCC !important;
+}
+
+section{
+	width:29%;
+	float:left;
+	margin:2% 2%;
+	text-align:center;
+	transition:0.3s;
+	
+	
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #09F;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+
+/* Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+
+*/
+@media(min-width: 576px) {
+	
+	
+	
+	}
+
+ /* //Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+
+
+/* // Large devices (desktops, 992px and up) */
+@media  only screen and(min-width: 992px) {
+        
+    .navbar-brand{
+        max-width: 100px !important;
+        max-height:100px !important;
+        float:left !important;
+        margin-top:-65px !important;
+        margin-left:15px !important;
+        -webkit-transition:  all 0.3s ease-in-out !important;
+        -moz-transition: all 0.3s ease-in-out !important;
+        -o-transition:  all 0.3s ease-in-out !important;
+        transition: all 0.3s ease-in-out !important;
+    }
+}
+
+
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	
+	}
+}
