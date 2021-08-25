@@ -118,7 +118,9 @@ footer{
 	color:#09C !important;
 	
 	}
-
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .7);
+}
 .page-header{
 	margin-top:1px;
 	color:#09C !important;
@@ -190,42 +192,41 @@ hr {
 }
 
 
-/* Extra small devices (portrait phones, less than 576px)
+// Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up)
-
-*/
 @media(min-width: 576px) {
 	
 	
 	
 	}
 
- /* //Medium devices (tablets, 768px and up) */
+// Medium devices (tablets, 768px and up)
 @media (max-width: 768px) {
 
 
-/* // Large devices (desktops, 992px and up) */
+// Large devices (desktops, 992px and up)
 @media  only screen and(min-width: 992px) {
-        
-    .navbar-brand{
-        max-width: 100px !important;
-        max-height:100px !important;
-        float:left !important;
-        margin-top:-65px !important;
-        margin-left:15px !important;
-        -webkit-transition:  all 0.3s ease-in-out !important;
-        -moz-transition: all 0.3s ease-in-out !important;
-        -o-transition:  all 0.3s ease-in-out !important;
-        transition: all 0.3s ease-in-out !important;
-    }
+	
+	.navbar-brand{
+    max-width: 100px !important;
+	max-height:100px !important;
+	float:left !important;
+	margin-top:-65px !important;
+	margin-left:15px !important;
+	-webkit-transition:  all 0.3s ease-in-out !important;
+  	-moz-transition: all 0.3s ease-in-out !important;
+  	-o-transition:  all 0.3s ease-in-out !important;
+  	transition: all 0.3s ease-in-out !important;
+  }
+ .header{
+	margin-top:300px;
+ }
+	
 }
 
-
-
-/* // Extra large devices (large desktops, 1200px and up) */
+// Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
 	
 	}
-}

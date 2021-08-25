@@ -5,32 +5,72 @@
         <meta charset="utf-8">
 
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Ethuto an educational website">
+        <meta name="keywords" content="Ethuto, an educational website">
+        <meta name="author" content="Ethuto development team, Rabanna, Phole, Mathe, Kasale, Nnete and Unaswi">
 
-            <!-- Fav icon  -->
+               <!-- web site title-->
+        <title>&#x2605; ::. <?=$this->getSiteTitle(); ?> ... &#x2605;</title>
+
+        
+                <!-- Fav icon  -->
         <link rel="icon" href="<?=ROOT?>app/uploads/logo-icon3.png" sizes="32x32" type="image/x-icon">
 
-            <!-- Font Awesome -->
-        <link rel="stylesheet" href="<?=ROOT?>app/css/all.css">
-
-            <!-- Google Fonts -->
+                <!-- Font Awesome -->
+       
+                <!-- Google Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
             
-        <!-- Bootstrap core CSS -->
-        <link href="<?=ROOT?>app/css/bootstrap.min.css" rel="stylesheet">
+        
+                <!-- Bootstrap Styling sheet-->
+        <link rel="stylesheet" href="<?=ROOT?>app/css/bootstrap.css">
+        
+                <!-- w3 Styling sheet-->
+        <link rel="stylesheet" href="<?=ROOT?>app/css/w3.css">
+        
+                <!-- Custom css-->
+        <link rel="stylesheet" href="<?=ROOT?>app/css/mdb.min.css">
+        
+                <!-- Custom css-->
+        <link rel="stylesheet" href="<?=ROOT?>app/css/style.css">
 
-            <!-- w3 STYLE -->
-        <link href="<?=ROOT?>app/css/w3.css" rel="stylesheet">
-
-            <!-- Material Design Bootstrap -->
-        <link href="<?=ROOT?>app/css/mdb.min.css" rel="stylesheet">
-
-            <!-- CUSTOMER STYLE -->
-        <link href="<?=ROOT?>app/css/style.css" rel="stylesheet">
+         <!-- html5shiv and respond Script for internet explorer 9-->
+  
+        <!--[if lt IE 9]>
+            <script src="<?=ROOT?>app/js/html5shiv.js"></script>
+            <script src="<?=ROOT?>app/js/respond.min.js"></script>
+        <![endif]-->
 
         <style>
             body {
                 font-family: 'Nunito', sans-serif;
-                }
+                
+            }
+
+                footer {
+                    bottom:0px;
+                    left: 0;
+                    right: 0;
+                    height:90px;   
+                    background: #000;
+                    /* get rid of min-width */
+                    
+                }	
+                .links{
+                    padding-top:15px;
+                    margin-right:10px;
+                    list-style:none;
+                    color:white !important;
+
+                    }
+                .link{
+                    padding-top:0px;
+                    margin-right:40px;
+                    list-style:none;
+                    margin-top:inherit;
+                    color:#FFFFFF;
+                    
+                }    
         </style>
 
    </head>
@@ -46,16 +86,11 @@
     
 
             <!-- JQuery -->
-        <script type="text/javascript" src="<?=ROOT?>app/js/jquery.min.js"></script>
-
-            <!-- Bootstrap tooltips -->
-        <script type="text/javascript" src="<?=ROOT?>app/js/bootstrap-tooltip.js"></script>
+        <script type="text/javascript" src="<?=ROOT?>app/js/jquery-3.2.1.min.js"></script>
 
             <!-- Bootstrap core JavaScript -->
         <script type="text/javascript" src="<?=ROOT?>app/js/bootstrap.min.js"></script>
 
-            <!-- MDB core JavaScript -->
-        <script type="text/javascript" src="<?=ROOT?>app/js/mdb.min.js"></script>
-
+        <?php $this->partial('partials/mainFooter'); ?>         
 </body>
 </html>

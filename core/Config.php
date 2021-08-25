@@ -7,7 +7,7 @@ class Config{
          'root_dir'            => '/oopmvc/', //app dir root
          'default_controller'  => 'Ethuto', //controller
          'default_layout'      => 'default', //degfault layout
-         'default_site_title'  => 'Ethutoapp', //site title
+         'default_site_title'  => 'Ethuto-app', //site title
          'db_host'             => '127.0.0.1', //use IP Address not domain
          'db_name'             => 'oopmvc',//database name
          'db_user'             => 'root',//DB user
