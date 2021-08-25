@@ -27,9 +27,19 @@
             <!-- CUSTOMER STYLE -->
         <link href="<?=ROOT?>app/css/style.css" rel="stylesheet">
 
+        <style>
+            body {
+                font-family: 'Nunito', sans-serif;
+                }
+        </style>
+
    </head>
 <body class="w3-light-grey">
+
+     <?php $this->partial('partials/mainMenu'); ?>
+
 <div class="container-fluid p-4">
+    
     <?php $this->content('content'); ?>
 
 </div>
