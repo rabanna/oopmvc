@@ -8,6 +8,7 @@ class Config{
          'default_controller'  => 'Ethuto', //controller
          'default_layout'      => 'default', //degfault layout
          'default_site_title'  => 'Ethuto-app', //site title
+         'db_drivers'          => 'mysql', //database drivers
          'db_host'             => '127.0.0.1', //use IP Address not domain
          'db_name'             => 'oopmvc',//database name
          'db_user'             => 'root',//DB user

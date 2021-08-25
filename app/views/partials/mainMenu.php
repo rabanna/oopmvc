@@ -1,4 +1,4 @@
-<header class="navbar navbar-static-top bs-docs-nav" id="top">
+
     <!--start the navigation bar-->
     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
         <div class="container-fluid">
@@ -21,4 +21,3 @@
             </div><!-- end navbar-header-->
           </div><!-- end container-->
     </nav><!-- end nave-->
-</header>
