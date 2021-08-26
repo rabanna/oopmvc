@@ -9,11 +9,12 @@ use Core\H;
 class DB{
     protected $dbh;
     protected $results;
-    protected $lastInserted;
+    protected $lastInsertedId;
     protected $rowCount =0;
     protected $fetchType = PDO::FETCH_OBJ;
     protected $class;
     protected $error = false;
+    protected $stmt;
     protected static $db;
 
     public function __construct(){
@@ -44,6 +45,44 @@ class DB{
         }
 
         return self::$db;
+    }
+
+    public function execute($sql, $bind=[]){
+        $this->result = null;
+        $this->lastInsertedId = null;
+        $this->error = false;
+
+        $this->stmt = $this->dbh->prepare($sql);
+        if(!$this->stmt->execute($bind)){
+            $this->error = true;
+        }else{
+            
+            $this->lastInsertedId = $this->dbh->lastInsertId();
+        }
+
+        return $this;
+    }
+
+    public function query($sql, $bind=[]){
+        $this->execute($sql, $bind);
+        if(!$this->error){
+            $this->rowCount = $this->stmt->rowCount();
+            $this->results = $this->stmt->fetchAll($this->fetchType);
+            
+        }
+        return $this;
+    }
+
+    public function getResult(){
+        return $this->results;
+    }
+
+    public function count(){
+        return $this->rowCount;
+    }
+
+    public function lastInsertId(){
+        return $this->lastInsertedId;
     }
 
 }

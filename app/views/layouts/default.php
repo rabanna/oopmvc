@@ -10,7 +10,7 @@
         <meta name="author" content="Ethuto development team, Rabanna, Phole, Mathe, Kasale, Nnete and Unaswi">
 
                <!-- web site title-->
-        <title>&#x2605; ::. <?=$pagetitle; ?> ... &#x2605;</title>
+        <title>&#x2605; ::. <?= $this->getSiteTitle(); ?> ... &#x2605;</title>
 
         
                 <!-- Fav icon  -->
