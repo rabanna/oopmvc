@@ -11,17 +11,19 @@ class LoginController extends Controller{
 
         $db = DB::getInstance();
 
-        $sql = "INSERT INTO articles(`title`,`body`) VALUES(:title, :body)";
-        $bind = ['title'=>'new article','body'=>'article body'];
-        $query = $db->execute($sql, $bind);
-        $lastid = $query->lastInsertId();
+       // $db->insert('articles', ['title' => 'article', 'body' => 'body of article']);
+         $db->update('articles', ['title'=>'updatedtitle', 'body'=>'updated article body'], ['id'=>'6']);
+       // $sql = "INSERT INTO articles(`title`,`body`) VALUES(:title, :body)";
+       // $bind = ['title'=>'new article','body'=>'article body'];
+       // $query = $db->execute($sql, $bind);
+       // $lastid = $query->lastInsertId();
 
       // $sql = "SELECT * FROM articles";
      //  $articles = $db->query($sql)->getResult();
       //  $query = $db->query($sql);
       //  $article = $query->getResult();
       //  $count = $query->count();
-       Helper::dnd($lastid);
+   // Helper::dnd($lastid);
         $this->view->getSiteTitle("Login page");
         $this->view->render('ethuto/login');
     }
