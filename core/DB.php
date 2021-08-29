@@ -124,4 +124,12 @@ class DB{
         return $this->lastInsertedId;
     }
 
+    public function setClass($class){
+        $this->class = $class;
+    }
+
+    public function setFetchType($type){
+        $this->fetchType = $type;
+    }
+
 }
