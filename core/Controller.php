@@ -3,6 +3,7 @@ namespace Core;
 
 use Core\View;
 use Core\Config;
+use Core\Request;
 
 class Controller{
     private $controllerName, $actionName;
@@ -14,6 +15,10 @@ class Controller{
         $viewPath = strtolower($controller) . '/' .$action;
         $this->view = new View($viewPath);
         $this->view->setLayout(Config::get('default_layout'));
+        $this->request = new Request();
+        $this->onController();
 
     }
+
+    public function onController(){}
 }

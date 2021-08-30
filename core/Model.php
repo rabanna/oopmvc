@@ -2,9 +2,10 @@
 namespace Core;
 use \PDO;
 use Core\DB;
+use Core\Request;
 
 class Model{
-    protected static $table ="";
+    protected static $table = "";
     protected static $columns = false;
     protected $validationPassed = true;
     protected $error = [];
@@ -220,7 +221,7 @@ class Model{
     }
 
     public static function mergeWithPagination($params = []){
-        $request - new Request();
+        $request = new Request();
         $page = $request->get('p');
         if(!$page || $page < 1) $page = 1;
         $limit = $request->get('limit')? $request->get('limit') : 25;
